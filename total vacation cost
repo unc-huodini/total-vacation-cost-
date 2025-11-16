@@ -1,0 +1,20 @@
+public class VacationPackageCalculator {
+    
+    // Method to calculate total cost
+    public static double calculateTotalCost(double accommodationCost, double mealCost, double activityCost) {
+        return accommodationCost + mealCost + activityCost;
+    }
+    
+    public static void main(String[] args) {
+        // Sample data
+        double accommodation = 850.50;
+        double meals = 325.25;
+        double activities = 275.00;
+        
+        // Calculate total cost
+        double totalCost = calculateTotalCost(accommodation, meals, activities);
+        
+        // Display the result
+        System.out.printf("Total Vacation Cost: $%.2f%n", totalCost);
+    }
+}
